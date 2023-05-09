@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 //Creating LoginFrame class
-public class LoginFrame extends JFrame implements ActionListener {
+public class JavaFrame extends JFrame implements ActionListener {
 
     Container container = getContentPane();
     JLabel userLabel = new JLabel("USERNAME");
@@ -17,7 +17,7 @@ public class LoginFrame extends JFrame implements ActionListener {
     JButton resetButton = new JButton("RESET");
     JCheckBox showPassword = new JCheckBox("Show Password");
 
-    LoginFrame(){
+    JavaFrame(){
         setLayoutManager();
         setLocationAndSize();
         addComponentsToContainer();
@@ -43,6 +43,7 @@ public class LoginFrame extends JFrame implements ActionListener {
         container.add(passwordLabel);
         container.add(userTextField);
         container.add(passwordField);
+        container.add(showPassword);
         container.add(loginButton);
         container.add(resetButton);
     }
